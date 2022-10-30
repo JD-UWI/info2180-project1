@@ -5,25 +5,25 @@
     font-size: 16px;
 }
 
-.header {
+header {
     background-color: white;
-    text-align: left;
     font-size: 18px;
     
 }
 
-.header nav {
-    text-align: right;
-    font-size: 18px;
+header .container ul li{
     color: #6b7280;
-    display: inline;   
+    display: inline;
+    float:right;
+    padding-right: 5px;
+
 }
 
-.header nav:hover {
+header .container nav:hover {
     color: #5A67D8
 }
 
-.a {
+a {
     font-size: 18px;
 }
 
@@ -42,7 +42,7 @@ body {
 
 .overview-hero {
     background-color: #E2E8F0;
-    text-align: right;
+    text-align: center;
 }
 .overview-hero .overview-hero-image {
 
@@ -53,14 +53,26 @@ body {
     font-size: 24px;
     color: #48BB78;
 }
+.learn-about img{
+    width: 150px;
+    height: 150px;
+    border: 5px;
+}
 
 .learn-about .cards {
     border-color: #E2E8F0;
-    margin: 5px;
-    box-shadow: #E2E8F0;
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.learn-about .card {
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.learn-about h3 {
+.learn-about .cards .card h3 {
     font-size: 21px;
     color: #48BB78;
 }
@@ -70,42 +82,64 @@ body {
     color: white;
 }
 
-/*testing Learn more h1{
-    aling: right;
+.testing h2{
+    /*text-align: left;*/
 }
 
-testing Learn more btn{
-    aling: right;
-}
-
-Link to "Learn more" {
+.testing .container .cta {
     background-color: #4A5568;
-    margin: 5px;
+    text-align: right;
+    border-radius: 5px;
 }
-*/
-.stories {
+
+.stories h3{
+    color: #5A67D8;
+    font-size: 18px;
+}
+.stories a{
     color: #5A67D8;
     font-size: 18px;
 }
 
-.stories .img{
-    margin: 0;
-    border-radius: 0%;
+.stories img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
 }
 
 .newsletter {
     background-color: #48BB78;
     color: white;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
 }
-
+.newsletter h3 {
+    text-align: center;
+}
+.newsletter .container {
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 30%;
+    margin-bottom: 1%;
+    margin-right: 30%;
+}
 .newsletter .btn{
     background-color: #5A67D8;
     color: white;
 }
+.newsletter .btn, .form-group{
 
-Footer {
+    float: left;
+    padding-right: 5px;
+}
+
+footer {
     background-color: #4A5568;
     color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 /*
 
