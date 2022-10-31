@@ -7,33 +7,42 @@
 
 header {
     background-color: white;
-    font-size: 18px;
-    
+    font-size: 18px;   
 }
 header .container{
+    font-size: 18px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 10px;
-    padding-left: 10px; 
-    padding-bottom: 10px;
-    padding-right: 10px;
+    grid-template-columns: 1fr 0.8fr;
 }
-
-header .container ul li{
-
+header h1 {
+    padding-top: 1px;
+    padding-left: 1px; 
+    padding-bottom: 1px;
+    padding-right: 1px;
+}
+header .container nav {
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 1px; 
+    padding-bottom: 1px;
+    padding-right: 1px;
+}
+header li{
+    font-size: 18px;
+    display: inline-block;
     color: #6b7280;
-    float: right;
-    list-style-type: none;
     padding-right: 5px;
-
 }
 
 header .container nav:hover {
     color: #5A67D8
 }
 
-a {
+ a {
     font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -62,6 +71,7 @@ body {
 .overview-hero .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
     padding-top: 1px;
     padding-left: 1px;
     padding-bottom: 1px;
@@ -149,10 +159,6 @@ body {
     padding-right: 25%;
 }
 
-.testing h2{
-    text-align: left;
-
-}
 .testing .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -165,6 +171,11 @@ body {
     padding-bottom: 5px;
     padding-right: 5px;
 }
+
+.testing h2{
+    text-align: left;
+}
+
 .testing .container .testing-description {
     margin-top: 5px;
     margin-left: 5px;
@@ -175,6 +186,7 @@ body {
     padding-bottom: 4%;
     padding-right: 150px;
 }
+
 .testing .container p {
     margin-top: 5px;
     margin-left: 5px;
@@ -185,12 +197,22 @@ body {
     padding-bottom: 10px;
     padding-right: 10px;
 }
-.testing .container .cta {
+/*.testing .container .cta {
     text-align: center;
     background-color: #4A5568;
     padding: 5px;
     border-radius: 5px;
+}*/
+
+.testing a{
+    background-color: #48BB78 ;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-left: 5px;
 }
+
 
 .stories{
     margin-top: 5px;
@@ -256,64 +278,43 @@ body {
     margin: 5px;
 }
 
-.newsletter {
+.newsletter{
     background-color: #48BB78;
     color: white;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    padding-top: 5px;
-    padding-left: 25%;
-    padding-bottom: 50px;
-    padding-right: 25%;
+    padding-top: 2em;
 }
-.newsletter h3 {
-    margin-top: 5px;
-    margin-left: 0;
-    margin-bottom: 5px;
-    margin-right: 0;
+.newsletter div.container{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 30em;
+    padding: 1em 2em 3.5em 2em;
+    flex-flow: column wrap;
 }
-.newsletter .container p {
-    text-align: left;
-    word-wrap: break-word;
-    margin-top: 1px;
-    margin-left: 1px;
-    margin-bottom: 1px;
-    margin-right: 1px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-bottom: 0px;
-    padding-right: 50px;/*change the wrap size*/
+.newsletter form{
+    display: flex;
+    align-self: flex-start;
+    flex-flow: row nowrap;
 }
-.newsletter .container {
-    margin-top: 5px;
-    margin-left: 1px;
-    margin-bottom: 1px;
-    margin-right: 1px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-bottom: 0px;
-    padding-right: 5px;
+.newsletter form input{
+    border: none;
+    border-radius: 0.4em;
+    width: 21em;
+    height: 3em;
+    padding-left: 1em;
 }
-.newsletter .btn{
+.newsletter button{
     background-color: #5A67D8;
-    color: white;
+    color:white;
+    border-radius: 0.4em;
+    border : none;
+    margin-left: 5px;
+    width: 10em;
 }
-.newsletter .btn, .form-group{
 
-    float: left;
-    padding-right: 5px;
-}
-
-footer {
+footer{
     background-color: #4A5568;
     color: white;
     padding-top: 1%;
     padding-bottom: 1%;
 }
-/*
-
-
-*/
